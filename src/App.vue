@@ -1,27 +1,48 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <setup-demo></setup-demo>
+  <ref-demo></ref-demo>
+  <reactive-demo></reactive-demo>
+  <to-ref-demo></to-ref-demo>
+  <to-refs-demo></to-refs-demo>
+  <computed-demo></computed-demo>
+  <watch-demo></watch-demo>
+  <watch-effect-demo></watch-effect-demo>
+  <readonly-demo></readonly-demo>
+  <teleport-demo></teleport-demo>
+  <suspense-demo></suspense-demo>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import SetupDemo from './components/SetupDemo.vue'
+import RefDemo from './components/RefDemo.vue'
+import ReactiveDemo from './components/ReactiveDemo.vue'
+import ToRefDemo from './components/ToRefDemo.vue'
+import ToRefsDemo from './components/ToRefsDemo.vue'
+import ComputedDemo from './components/ComputedDemo.vue'
+import WatchDemo from './components/WatchDemo.vue'
+import WatchEffectDemo from './components/WatchEffectDemo.vue'
+import ReadonlyDemo from './components/ReadonlyDemo.vue'
+import TeleportDemo from './components/TeleportDemo.vue'
+import SuspenseDemo from './components/SuspenseDemo.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
-  }
+    SetupDemo,
+    RefDemo,
+    ReactiveDemo,
+    ToRefDemo,
+    ToRefsDemo,
+    ComputedDemo,
+    WatchDemo,
+    WatchEffectDemo,
+    ReadonlyDemo,
+    TeleportDemo,
+    SuspenseDemo,
+  },
 })
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
